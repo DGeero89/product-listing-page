@@ -1,2 +1,2 @@
-# product-listing-page
-A sample product listing page
+# Product Listing Page
+A sample product listing page.
