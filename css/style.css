@@ -299,7 +299,9 @@ input:focus
 	border-color: #1ab188;
 }
 
-.order-details h3 {
+.subtotal h3,
+.shipping h3,
+.total h3 {
 	padding: 0;
 
 }
