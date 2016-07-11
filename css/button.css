@@ -1,0 +1,121 @@
+button {
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	overflow: visible;
+	text-transform: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+	font-weight: normal;
+	text-transform: capitalize;
+	display: inline-block;
+	cursor: pointer;
+	padding: .5em 1em;
+  	margin: .5em .2em .5em 0;
+  	line-height: 1.618em;
+  	font-size: 1em;
+  	background: #f8f8f8;
+  	color: #333;
+  	margin: 0 0 5px;
+  	box-shadow: 0px 4px 0 rgba(0,0,0,0.4);
+  	border: none;
+  	border-color: #ccc;
+    border-radius: 3px;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+.button:hover {
+	background: #ccc;
+}
+
+.button:active{
+	box-shadow: none;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.button-sm {
+	
+	font-size: .8em;
+}
+
+.button-md {
+	
+	font-size: 1.3em;
+}
+
+.button-lg {
+	font-size: 1.6em;
+}
+
+.button:focus{
+	outline: none;
+}
+
+.button-green {
+	background: #81DB95;
+	color: #ffffff;
+	box-shadow: 0px 4px 0 #6AB47B;
+	border: none;
+}
+
+.button-green:hover {
+	background: #72C184;
+}
+
+.button-green:active {
+	background: #63A873;
+}
+
+.button-blue {
+	background: #0CACE8;
+	color: #fff;
+}
+
+.button-blue:hover {
+	background: #6CCFF5;
+}
+
+.button-blue:active {
+	background: #097DA8;
+}
+.button-yellow {
+	background: #FFF400;
+	color: #fff;
+}
+
+.button-yellow:hover {
+	background: #E5DC00;
+}
+
+.button-red {
+	background: #FF0000;
+	color: #fff;
+}
+
+.button-red:hover {
+	background: #CC0605;
+}
+
+.button-teal {
+	background: #00FFDC;
+}
+
+.button-teal:hover {
+	background: #00BFA5;
+}

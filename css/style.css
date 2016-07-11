@@ -1,0 +1,322 @@
+/********** Resets **********/
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/********** Base Styles **********/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Lato, sans-serif;
+	font-size: 1.6em;
+}
+
+h1, h2, h3 {
+	padding: 1em 0 1em;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2.6em;
+	font-weight: normal;
+}
+
+p {
+	margin: 1em 0 1em;
+}
+
+img {
+	display: block;
+}
+
+.row{
+	width: 96%;
+	max-width: 960px;
+	margin: 0 auto;
+} 
+
+.grid_2-1 {
+	width: 50%;
+	padding: 0 5% 0 0%;
+	float: left;
+}
+
+.grid_2-1 + .grid_2-1 {
+	padding: 0;
+}
+.grid_3-1 {
+	width: 31.2%;
+	float: left;
+	margin-left: 3.2%;
+	margin-right: 0;
+	margin-bottom: 3.2%;
+}
+
+.grid_3-1:nth-of-type(3n+1){
+	margin-left: 0;
+}
+
+/********** Header Styles ***********/
+
+#header-wrap{
+	background: #6AB47B;
+	border-top: 5px solid #4C8158;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header a:hover {
+	background: #DAF5E0;
+}
+
+
+/********** Navigation Styles **********/
+
+#main-nav {
+    display: inline-block;
+    position: relative;
+}
+
+#main-nav li {
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	-webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+#main-nav li:hover {
+    background: #DAF5E0;
+    color: #4c8158;
+}
+
+#main-nav li:hover a {
+	color: #4c8158;
+}
+
+#main-nav li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 20px;
+    display: inline-block;
+}
+
+/********** Main Content Styles **********/
+
+.page-title-wrap{
+	background: #DAF5E0;
+}
+
+#page-title{
+	text-align: center;
+	padding: 5%;
+	color: #4c8158;
+	font-family: 'Raleway';
+    font-weight: 300;
+} 
+
+#main-wrap{
+	min-height: 100vh;
+	background-size: cover;
+	padding: 0 0 5%;
+	background: #00c6ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: url(../images/cream_pixels.png);
+}
+
+#content {
+	margin-top: 0%;
+	padding: 2%;
+}
+
+/********** Product Styles **********/
+
+.product {
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 10px 0px #000;
+	/*padding: 10px;*/
+}
+
+.product-title {
+	padding: 5px 0 10px 5px;
+}
+
+.product-title h3 {
+	text-align: center;
+	font-weight: normal;
+	color: #4c8158;
+}
+
+.price {
+	position: absolute;
+    background: rgba(91, 154, 106,.7);
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.product-image {
+	position: relative;
+}
+
+
+.product img {
+	width: 100%;
+	display: block;
+}
+
+.product-description {
+	text-align: center;
+	padding: 10px;
+}
+
+.cart-contents .price {
+	position: relative;
+	font-size: 1em;
+	display: inline-block;
+}
+
+#shopping-cart {
+	background: #e8e5e5;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.item {
+	width: 100%;
+	padding: 40px 0;
+}
+
+.item div {
+	padding: 0 5px 0;
+}
+
+.item div,
+.item img {
+	float: left;
+}
+
+.order-details {
+	float: right;
+	text-align: right;
+	background: #e8e5e5;
+	padding: 10px;
+}
+
+.product-img {
+	width: 10%;
+}
+
+.product-img img {
+	width: 100%;
+}
+.product-details {
+	width: 45%;
+	padding: 0 10px 0;
+}
+
+.item h3 {
+	padding-top: 0;
+	color: #4c8158;
+	font-weight: normal;
+}
+
+.cart-quantity {
+	width: 30%;
+}
+
+.cart-quantity input[type="number"] {
+	width: 30%;
+}
+
+.cart-price {
+	width: 15%;
+}
+
+.form-control{
+	padding: .5em 1em;
+	border: 1px solid #cccccc;
+	font-size: 1em;
+	line-height: 1.618;
+}
+input:focus
+{
+	outline:0;
+}
+.form-control:focus {
+	border-color: #1ab188;
+}
+
+.order-details h3 {
+	padding: 0;
+
+}
+
+.subtotal,
+.shipping,
+.total {
+	padding: 10px;
+}
+
+.total {
+	background: #DAF5E0;
+}
+/********** Footer Styles **********/
+
+#footer-wrap {
+	background: #DAF5E0;
+	text-align: center;
+	padding: 20px 0 20px;  
+}
