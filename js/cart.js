@@ -397,7 +397,7 @@
 			 }
 
 
-			 if(tmpArr.length > 0){
+			 if(tmpArr.length >= 1){
 
 			 	for(var j = 0; j < tmpArr.length; j++){
 			 		
@@ -417,7 +417,7 @@
 		
 		cart.discountTotal = currentDiscount > tmpDiscount ? (
 			
-			discountMessage.innerHTML = '<p>Your previous discount code gave you a larger discount. The new code will not be applied.</p>',
+			discountMessage.innerHTML += '<p>Your previous discount code gave you a larger discount. The new code will not be applied.</p>',
 			currentDiscount
 
 			) : (
